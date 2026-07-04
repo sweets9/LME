@@ -31,7 +31,7 @@ model_list:
   # No other code changes needed!
   #
   # Example usage:
-  #   curl -k https://localhost:11435/v1/chat/completions \
+  #   curl -k https://localhost:4000/v1/chat/completions \
   #     -H "Authorization: Bearer sk-lme-llama-proxy" \
   #     -H "Content-Type: application/json" \
   #     -d '{"model": "gpt-4", "messages": [{"role": "user", "content": "Hello"}]}'
@@ -96,7 +96,7 @@ model_list:
 
 general_settings:
   # This is the REAL API key that external clients must use to access LiteLLM
-  # Example: curl -H "Authorization: Bearer sk-lme-llama-proxy" https://localhost:11435/v1/chat/completions
+  # Example: curl -H "Authorization: Bearer sk-lme-llama-proxy" https://localhost:4000/v1/chat/completions
   master_key: sk-lme-llama-proxy
 
 litellm_settings:

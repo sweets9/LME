@@ -99,3 +99,8 @@ package.json
 package-lock.json
 DECISIONS.md
 EVALUATION/
+
+# Private planning and strategy material for this fork. Keep the public repo
+# focused on open-source LME contributions; store non-public ADRs/specs/
+# roadmap/marketing/strategy locally under this ignored directory.
+private/
