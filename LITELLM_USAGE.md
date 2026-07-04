@@ -6,7 +6,7 @@ LiteLLM provides an OpenAI-compatible API proxy for LME's local LLM (llama.cpp) 
 
 **Endpoint:** `https://localhost:4000`  
 **API Key:** `sk-lme-llama-proxy`  
-**Default Model:** `gemma-3-1b` (local)
+**Default Model:** `lfm2.5-1.2b-instruct` (local)
 
 ## Basic Usage Examples
 
@@ -17,7 +17,7 @@ curl -k https://localhost:4000/v1/chat/completions \
   -H "Authorization: Bearer sk-lme-llama-proxy" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gemma-3-1b",
+    "model": "lfm2.5-1.2b-instruct",
     "messages": [
       {"role": "user", "content": "Explain what a SIEM is in one sentence."}
     ],
@@ -32,7 +32,7 @@ curl -k https://localhost:4000/v1/chat/completions \
   -H "Authorization: Bearer sk-lme-llama-proxy" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gemma-3-1b",
+    "model": "lfm2.5-1.2b-instruct",
     "messages": [
       {
         "role": "system",
@@ -73,7 +73,7 @@ headers = {
     "Content-Type": "application/json"
 }
 payload = {
-    "model": "gemma-3-1b",
+    "model": "lfm2.5-1.2b-instruct",
     "messages": [
         {"role": "user", "content": "Hello!"}
     ],
@@ -97,7 +97,7 @@ curl -k https://lme-litellm:4000/v1/chat/completions \
   -H "Authorization: Bearer sk-lme-llama-proxy" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gemma-3-1b",
+    "model": "lfm2.5-1.2b-instruct",
     "messages": [{"role": "user", "content": "Hello"}],
     "max_tokens": 20
   }'
@@ -130,7 +130,7 @@ curl -k https://localhost:4000/v1/chat/completions \
 
 ## Common Parameters
 
-- `model` - Model name (e.g., "gemma-3-1b", "gpt-4")
+- `model` - Model name (e.g., "lfm2.5-1.2b-instruct", "gpt-4")
 - `messages` - Array of message objects with `role` and `content`
 - `max_tokens` - Maximum tokens to generate
 - `temperature` - Randomness (0.0 = deterministic, 1.0 = creative)
