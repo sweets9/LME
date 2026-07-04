@@ -15,12 +15,12 @@ CISA's Logging Made Easy (LME) is a no cost, open source platform that centraliz
 > After reviewing our cybersecurity services to ensure alignment with our strategic priorities and statutory mission, the Cybersecurity and Infrastructure Security Agency (CISA) made the difficult decision to retire support for the Logging Made Easy (LME) service, effective May 22, 2026. Users may continue to use LME; however, the service will no longer be maintained or supported by CISA.
 
 > [!NOTE]
-> **Maintained fork.** This repository (`sweets9/LME`) continues LME after
-> CISA's retirement, keeping it secure and enterprise-credible while leaning
-> into two directions: a local-LLM **agentic SOC-in-a-box** and **firehose log
-> diversion** to cut premium-SIEM ingest cost. See the
-> [fork reference docs](docs/markdown/reference/README.md) for the maintenance
-> strategy, roadmaps, and dependency inventory.
+> **Community-maintained fork.** This repository (`sweets9/LME`) is an
+> independent, community-maintained continuation of LME following CISA's
+> retirement of the upstream project. It focuses on keeping the platform
+> current with security fixes and dependency updates. See the
+> [fork reference docs](docs/markdown/reference/README.md) for the dependency
+> inventory and maintenance tooling.
 
 ## Who is Logging Made Easy for?
 
