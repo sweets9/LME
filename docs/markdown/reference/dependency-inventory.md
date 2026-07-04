@@ -3,12 +3,14 @@
 _Maintained in the `sweets9/LME` fork. Last reviewed: 2026-07-04._
 
 This inventory lists every pinned dependency in the repository, its exact
-location, the current version, and a considered upgrade recommendation. It is
-the working document behind the "safe, small, reviewable upgrades" policy for
-the fork (see [fork-maintenance-strategy.md](fork-maintenance-strategy.md)).
+location, the current version, and a considered upgrade recommendation. It
+supports a "safe, small, reviewable upgrades" policy: prefer patch/minor bumps
+that can be verified locally, and treat core data-plane components (Elastic,
+Wazuh, Podman) as high-risk changes needing a documented test path.
 
-Upstream CISA LME was retired on 2026-05-22; this fork continues maintenance,
-so keeping this list current is part of first-class maintainer hygiene.
+Upstream CISA LME was retired on 2026-05-22; this community-maintained fork
+keeps the dependencies current, so keeping this list up to date is part of
+routine maintenance hygiene.
 
 ## Legend
 
@@ -90,9 +92,9 @@ a real Podman host):
 3. Record the pin and its provenance here.
 
 This is deferred rather than applied because it cannot be verified in a
-CI/dev sandbox without pulling multi-GB images and standing up the stack —
-see the blocker note in
-[agentic-soc-spike-summary.md](agentic-soc-spike-summary.md).
+CI/dev sandbox without pulling multi-GB images and standing up the full
+Podman stack; it should be done on a real deployment host where the pinned
+images can be smoke-tested before adoption.
 
 ## 5. Applied in this pass
 
